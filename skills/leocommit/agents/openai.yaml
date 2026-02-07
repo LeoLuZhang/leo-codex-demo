@@ -1,0 +1,4 @@
+interface:
+  display_name: "Leo Commit"
+  short_description: "Create new commits with leocommit messages"
+  default_prompt: "Use $leocommit to create a new git commit message and commit the staged changes."
