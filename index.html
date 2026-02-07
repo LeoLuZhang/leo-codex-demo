@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Snake</h1>
+        <div class="stats">
+          <div>Score: <span id="score">0</span></div>
+          <div>Status: <span id="status">Ready</span></div>
+        </div>
+      </header>
+
+      <section class="game">
+        <canvas id="board" width="400" height="400" aria-label="Snake board" role="img"></canvas>
+      </section>
+
+      <section class="controls">
+        <button id="restart" class="btn">Restart</button>
+        <button id="pause" class="btn" aria-pressed="false">Pause</button>
+      </section>
+
+      <section class="dpad" aria-label="Directional controls">
+        <button class="btn" data-dir="up">Up</button>
+        <div class="dpad-middle">
+          <button class="btn" data-dir="left">Left</button>
+          <button class="btn" data-dir="right">Right</button>
+        </div>
+        <button class="btn" data-dir="down">Down</button>
+      </section>
+
+      <footer class="hint">
+        Use Arrow Keys / WASD to move. Space to pause.
+      </footer>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
